@@ -9,7 +9,7 @@ class Referencias(models.Model):
 
 
 class Jobs(models.Model):
-    categoria_choices = (('D', 'Design'), ('EV', 'Edição de Vídeo'))
+    categoria_choices = (('D', 'Design'), ('EV', 'Edição de Vídeo'), ('T', 'Todos'))
     
     status_choices = (('C', 'Em criação'), ('AA', 'Aguardando aprovação'), ('F', 'Finalizado'))
     
