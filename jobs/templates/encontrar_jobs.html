@@ -100,7 +100,13 @@
                                         </div>
                                         <div class="col-4">
                                             <h6 class="titulo-body">Categoria:</h6>
-                                            <p>{{job.prazo_entrega}}</p>
+                                            <p>
+                                                {% if job.categoria == 'D'%}
+                                                    Design
+                                                {% else %}
+                                                    Edição de Vídeo
+                                                {% endif%}
+                                            </p>
                                         </div>
                                     </div>
                                     <h4 style="display:inline;" class="job-modal-titulo">Referencias:</h4>

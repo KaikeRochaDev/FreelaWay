@@ -23,7 +23,8 @@ class Jobs(models.Model):
     profissional = models.ForeignKey(User, on_delete=models.DO_NOTHING, null=True, blank=True)
     
     reservado = models.BooleanField(default=False)
-    status = models.CharField(max_length=2, choices=status_choices, default='AA')
+    status = models.CharField(max_length=2, choices=status_choices, default='C')
+
     
     def __str__(self) -> str:
         return self.titulo
